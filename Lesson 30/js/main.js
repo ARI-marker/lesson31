@@ -1,4 +1,6 @@
-
+var wakeuptime;
+var dstime;
+var sleeptime;
 
 var meridian = "AM";
 
