@@ -1,7 +1,17 @@
 var wakeuptime;
 var dstime;
 var sleeptime;
+var noon;
 
+function showcurrentTime(){
+
+    var clock = document.getElementById('clock')
+    var currentTime = new Date()'
+
+    var hours = currentTime.getHours();
+    var minutes = currentTime.getMinutes();
+    var seconds = currentTime.getSeconds();
+    
 var meridian = "AM";
 
 if(hours >= noon){
@@ -9,6 +19,7 @@ if(hours >= noon){
 }
 
 var clockTime = hours + ":" + minutes + ":" + seconds + ":" + meridian;
+clock.innerHTML = clockTime;
 
 
 
